@@ -10,14 +10,14 @@ public class JenkinsLearningApplication {
         SpringApplication.run(JenkinsLearningApplication.class, args);
         System.out.println("application started");
 
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
 
         System.out.println("thread completed");
-        System.exit(0);
+//        System.exit(0);
     }
 
 }
