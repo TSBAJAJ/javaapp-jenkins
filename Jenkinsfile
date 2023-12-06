@@ -11,7 +11,9 @@ pipeline{
     }
     
     stage('Deployment'){
-      deploy adapters: [tomcat9(credentialsId: '1a297863-a901-463a-bb8f-914da16ccd1a', path: '', url: 'http://localhost:8081/')], contextPath: 'javaweb-jenkins', war: 'target/*.war'
+       steps {
+        deploy adapters: [tomcat9(credentialsId: '1a297863-a901-463a-bb8f-914da16ccd1a', path: '', url: 'http://localhost:8081/')], contextPath: 'javaweb-jenkins', war: 'target/*.war'
+       }
     }
   }
 }
